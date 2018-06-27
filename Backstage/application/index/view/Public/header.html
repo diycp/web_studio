@@ -1,0 +1,95 @@
+<header id="header">
+    <!-- Enter Your stuff for nav! -->
+    <!-- Nav -->
+    <!-- Currency -->
+    <div class="upper">
+        <div class="row">
+            <div class="header-links-left">
+                <ul class="nav">
+                    <li class="nav-first">
+                        <a href="http://santaparkarcticworld.com/contact">
+                                        ⌕                </a>
+                    </li>
+                    <li class="">
+                        <a href="http://santaparkarcticworld.com/book-a-package">
+                                        Book a Package                </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="/">
+                    <img class="" src="__HOME__/images/logo.png" srcset="/application/themes/site_theme/images/santa-park-arctic-world-logox2.png 2x" data-mobile-image="/application/themes/site_theme/images/santa-park-arctic-world-logo-mobile.png">
+                </a>
+            </div>
+            <div class="header-links-right">
+                <ul class="nav dropdown menu" data-dropdown-menu="kf8iy0-dropdown-menu" data-close-on-click-inside="false" role="menubar">
+                    <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="Discover" data-is-click="false">
+                        <a href="" tabindex="0" class='js-hook'>菜单<i class="fa fa-chevron-right" style='font-size:12px'></i></a>
+                        <ul class="menu discover submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu" style="">
+                            {volist name='header' id='vo'}
+                            <li class="nav-first is-submenu-item is-dropdown-submenu-item" role="menuitem">
+                                <a href="{:url($vo.module, array('cat_id' => $vo.id));}">{$vo.Lname}</a>
+                            </li>
+                            {/volist}
+                        </ul>
+                        <div class="submenu-bg"></div>
+                    </li>
+                </ul>
+                <ul class="nav dropdown menu" data-dropdown-menu="0zhw4f-dropdown-menu" data-close-on-click-inside="false" role="menubar">
+                    <li role="menuitem" class="is-dropdown-submenu-parent opens-right" aria-haspopup="true" aria-expanded="false" aria-label="
+            English        ">
+                        <a href="#language" tabindex="0" class='js-hook'>
+            语言        <i class="fa fa-chevron-right" style='font-size:12px'></i></a>
+                        <ul class="menu language submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
+                            <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                                <a href="https://santaparkarcticworld.com/switch_language/1/1/810" title="English" class="ccm-block-switch-language-active-flag">
+
+                        <img id="ccm-region-flag-us" class="ccm-region-flag" src="/updates/concrete5-8.2.0/concrete/images/countries/us.png" alt="us">
+                        英文
+                    </a>
+                            </li>
+                            <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item">
+                                <a href="https://santaparkarcticworld.com/switch_language/1/265/810" title="Finnish" class="">
+
+                        <img id="ccm-region-flag-fi" class="ccm-region-flag" src="/updates/concrete5-8.2.0/concrete/images/countries/fi.png" alt="fi">中文                        
+                    </a>
+                            </li>
+                        </ul>
+                        <div class="submenu-bg"></div>
+                    </li>
+                </ul>
+                <ul class="nav dropdown menu" data-dropdown-menu="y4rwtx-dropdown-menu" data-close-on-click-inside="false" role="menubar">
+                    <li class="basket-wrapper is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="">
+                        <!-- cart link to sit over cart icon -->
+                        <a class="basket-link" href="/precheckout" tabindex="0"></a>
+                        <a href="#basket"><span class="icon-shopping-trolley"></span></a>
+                        <ul class="menu basket submenu is-dropdown-submenu first-sub vertical" data-submenu="" aria-hidden="true" role="menu">
+                            <!-- Cart -->
+                            <span>0 items</span>
+                            <a class="cart_count" href="/precheckout">View</a>
+                        </ul>
+                        <div class="submenu-bg"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script sync>
+        $('.is-dropdown-submenu-parent').hover(function() {
+            $(this).find('ul').addClass('js-dropdown-active')
+            $(this).find('.fa').removeClass('fa-chevron-right').addClass('fa-chevron-down')
+        }, function() {
+            setTimeout(function() {
+                $(this).find('ul').removeClass('js-dropdown-active')
+                $(this).find('.fa').removeClass('fa-chevron-down').addClass('fa-chevron-right')
+            }.bind(this), 200)
+        })
+        </script>
+        <a class="right-off-canvas-toggle" data-toggle="offCanvas" href="#" aria-expanded="false" aria-controls="offCanvas">
+            <div class="hamburger-wrapper">
+                <span class="hamburger">
+                                        <span class="top"></span><span class="middle"></span><span class="bottom"></span>
+                </span>
+            </div>
+        </a>
+    </div>
+</header>

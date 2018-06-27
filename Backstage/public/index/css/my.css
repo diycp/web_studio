@@ -1,0 +1,16 @@
+.image-wrapper img{
+	font-size: 0;
+	width: 100%;
+}
+
+.detail{
+	padding: 14px 0;
+}
+
+.detail .accordyTabs section{
+	background-color: #f7f7f4 !important
+}
+
+.detail .accordyTabs .accordyTabWrap{
+	background-color: #f7f7f4 !important
+}`

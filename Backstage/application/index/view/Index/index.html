@@ -1,0 +1,85 @@
+{extend name="Base/common"}
+
+{block name='primary'}
+    <section id="primary-content" class="upper-strip">
+        <div class="row content-row">
+            <div class="columns small-12 medium-12 large-12">
+                <p style="text-align: justify;">We invite you to experience true moments with us at SantaPark Arctic World. Our mission is to make every moment of your stay a lifelong memory, whether you are looking for a Christmas fairytale, nature escape, cultural feast or a company retreat. Stay in the luxurious comfort of Arctic TreeHouse Hotel and enjoy a variety of authentic yet magical encounters from your doorstep.</p>
+            </div>
+        </div>
+    </section>
+{/block}
+
+{block name="body"}
+    <section id="secondary-content" class="lower-strip">
+        <div class="row content-row">
+            <div class="columns small-12 medium-12 large-12">
+                <div class="columns small-12 medium-4 large-4">
+                    <h3 id="brand">Brand Family</h3>
+                </div>
+                <div class="columns small-12 medium-8 large-8">
+                    <p><a href="/santapark"><img src="__HOME__/picture/santapark-logo-small.png" alt="SantaPark-logo-small.png" width="163" height="35"></a></p>
+                    <p>&nbsp;</p>
+                    <p><a href="/santa-claus-secret-forest"><img src="__HOME__/picture/santa-claus-secret-forest-logo-small.png" alt="Santa-Claus-Secret-Forest-logo-small.png" width="111" height="45"></a></p>
+                    <p><a href="/santa-claus-secret-forest">&nbsp;</a></p>
+                    <p><a href="/arctic-forest-spa"><img src="__HOME__/picture/arctic-forest-spa-logo-small.png" alt="Arctic-Forest-Spa-logo-small.png" width="182" height="35"></a></p>
+                    <p><a href="/arctic-forest-spa">&nbsp;</a></p>
+                    <p><a href="/arctic-treehouse-hotel"><img src="__HOME__/picture/arctic-treehouse-hotel-logo-small.png" alt="Arctic-Treehouse-Hotel-logo-small.png" width="273" height="30"></a></p>
+                    <p><a href="/arctic-treehouse-hotel">&nbsp;</a></p>
+                    <p><a href="/rakas"><img src="__HOME__/picture/rakas-restaurant-bar-logo-small.png" alt="Rakas-Restaurant-Bar-logo-small.png" width="80" height="38"></a></p>
+                </div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>We are also delighted to provide you with the most magic and memorable once-in-a-lifetime fully tailored itinerary through <a href="http://www.laplandluxury.com/lapland-luxury/">Lapland Luxury</a></p>
+                <p>
+                    <a href="http://www.laplandluxury.com/lapland-luxury/">
+                        <span style='display: block; font-size: 16px; letter-spacing: 2px'>首页</span>
+                        <span style='display: block; font-size: 16px; letter-spacing: 2px'>推荐</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            {include file="Public/lists"}
+        </div>
+    </section>
+
+    <div id="newsletter-signup" class="backstretch-block">
+        <div class="backstretch-image" data-image="/application/themes/site_theme/images/newsletter-background.jpg" data-image-mobile="/application/themes/site_theme/images/newsletter-background-mobile.jpg"></div>
+        <div class="row">
+            <div class="columns small-12 medium-12 large-12 column-content">
+                <h3>Stay In Touch</h3>
+                <p>The journey to SantaPark Arctic World starts here!&nbsp;
+                    <br /> Join our mailing list and keep in loop with us.</p>
+            </div>
+            <div id="formblock22" class="ccm-block-type-form-plus">
+                <form enctype="multipart/form-data" class="mailchimp-form form-stacked miniSurveyView" id="miniSurveyView22" method="post" action="https://santaparkarcticworld.com/submit_form/22#formblock22">
+                    <div class="fields-wrapper">
+                        <div class="columns small-12 medium-6 large-3">
+                            <!-- normal field markup -->
+                            <div class="form-group field field-text ">
+                                <input placeholder="Your first name*" name="Question1" id="Question1" class="form-control" type="text" value="" /> </div>
+                        </div>
+                        <div class="columns small-12 medium-6 large-3">
+                            <!-- normal field markup -->
+                            <div class="form-group field field-text ">
+                                <input placeholder="Your surname*" name="Question2" id="Question2" class="form-control" type="text" value="" /> </div>
+                        </div>
+                        <div class="columns small-12 medium-9 large-3">
+                            <!-- normal field markup -->
+                            <div class="form-group field field-email ">
+                                <input placeholder="Email address*" name="Question3" id="Question3" class="form-control" type="email" value="" /> </div>
+                        </div>
+                        <div class="columns small-12 medium-3 large-3">
+                            <input type="submit" name="Submit" class="button" value="Submit" />
+                        </div>
+                    </div>
+                    <input name="qsID" type="hidden" value="1492595362" />
+                    <input name="pURI" type="hidden" value="" />
+                </form>
+            </div>
+            <!-- .formblock -->
+        </div>
+    </div>
+{/block}

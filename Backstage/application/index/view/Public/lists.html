@@ -1,0 +1,23 @@
+<ul class="page-list-wrapper">
+    <!-- List Loop -->
+   {volist name='posts' id='vo' key='k'}
+        <li class="columns small-12 medium-6 large-3 offer-false">
+            <a href="{:url('Pages/detail', array('id' => $vo.id));}">
+                <div class="image-wrapper backstretch-block-lazy toggled" style="position: relative; z-index: 0; background-image: none;">
+                    <img alt="" src="{$vo.img ? $vo.img : "https://792327e631d328999a2c-23ff390096145d62077159b787d9fbd9.ssl.cf1.rackcdn.com/66/1/large.jpg"}">
+                </div>
+                <div class="content-wrapper">
+                    <p class="tagline">{$vo.title}</p>
+                    <h3>{$vo.desc} new</h3>
+                    <span class="link">查看更多</span>
+                </div>
+            </a>
+        </li>
+   {/volist}
+</ul>
+
+<script>
+    $(function() {
+        var BL          = 3 / 2
+    })
+</script>

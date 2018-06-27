@@ -1,0 +1,43 @@
+{extend name="Base/common"}
+
+{block name='primary'}
+    <section id="primary-content" class="upper-strip">
+        <div class="row content-row">
+            <div class="columns small-12 medium-12 large-12">
+                <h3>{$cat_desc}</h3>
+            </div>
+        </div>
+    </section>
+{/block}
+
+{block name="body"}
+    <section id="secondary-content" class="lower-strip">
+        <div class="row">
+            <!-- Filters -->
+            <!-- Number of Tours -->
+            <!-- warning message, no results -->
+            <!-- current -->
+            {include file="Public/current"}
+            <!-- Number of Tours -->
+
+            {include file="Public/lists"}
+
+            <!-- warning message, no results -->
+            <div class="tour-pagination-content">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div class="displayOptions">
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="arrow unavailable"></li>
+                            {for start="1" end="$ap + 1"}
+                                <li class="{$i == $p ? "current" : ''}"><a href="">{$i}</a></li>
+                            {/for}
+                            <li class="arrow next"><a href="?page=2&amp;per_page=8"></a></li>
+                        </ul>
+                        <p>Page {$p} of {$count}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{/block}

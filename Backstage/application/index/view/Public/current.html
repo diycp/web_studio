@@ -1,0 +1,18 @@
+<div class="row">
+	<div class="columns small-12 medium-12 large-12">
+		<nav role="navigation" aria-label="breadcrumb">
+			<ul class="breadcrumbs">
+				<li>
+					<i class='fa fa-home' style='font-size: 17px; margin-right: 0.4rem'></i>
+					<a href="https://santaparkarcticworld.com/" target="_self">Home</a>
+					<i class='fa fa-angle-right'></i>
+				</li>
+				{volist name='breack' id='vo' key='k'}
+					<li>
+						<a href="https://santaparkarcticworld.com/" target="_self">{$vo.Lname}</a>
+					</li>
+				{/volist}
+			</ul>
+		</nav>
+	</div>
+</div>

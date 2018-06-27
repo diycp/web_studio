@@ -1,0 +1,50 @@
+<div class="columns small-12 medium-4 large-4">
+    <img src="/application/files/9714/9260/5341/santa-park-colour-logo.png" alt="" width="270" height="58" class="ccm-image-block img-responsive bID-57">
+    <p style="text-align: left;">&nbsp;</p>
+    <p style="text-align: left;">Tarvantie 1
+        <br> 96930 Arctic Circle, Finland
+        <br> ☏ +358 600 301 203 (1.5€/min + local charge)
+        <br> ✉ info@santapark.com</p>
+    <p><a class="button-secondary" href="#booking_section">Book Your Visit</a></p>
+    <p>&nbsp;</p>
+    <p><a href="https://www.facebook.com/SantaParkLapland/?ref=ts"><img src="/application/files/3214/9667/8076/facebook_icon.png" alt="facebook_icon.png" width="128" height="128" style="width: 13%; margin-right: 2%;"></a><a href="https://www.tripadvisor.fi/Attraction_Review-g189922-d2423010-Reviews-Joulukka-Rovaniemi_Lapland.html"><img src="/application/files/6914/9667/8809/tripadvisor_icon.png" alt="tripadvisor_icon.png" width="128" height="128" style="width: 13%; margin-right: 2%;"></a><a href="https://www.youtube.com/channel/UCHiRtS_4fKUkPTMT_NWaseQ"><img src="/application/files/6114/9667/8810/youtube_icon.png" alt="youtube_icon.png" width="128" height="128" style="margin-right: 2%; width: 13%;"></a><a href="https://www.google.fi/maps/place/SantaPark+Oy/@66.539098,25.7949643,17z/data=!4m5!3m4!1s0x442b4c30411057b5:0xd617e55aa74de3aa!8m2!3d66.539098!4d25.797153"><img src="/application/files/2614/9667/8808/map_marker_icon.png" alt="map_marker_icon.png" width="128" height="128" style="width: 13%; margin-right: 2%;"></a><a href="https://www.instagram.com/santaparkarcticworld/"><img src="/application/files/5114/9667/8808/instagram_icon.png" alt="instagram_icon.png" width="128" height="128" style="margin-right: 2%; width: 13%;"></a><a href="https://twitter.com/SantaparkCave"><img src="/application/files/2514/9667/8809/twitter_icon.png" alt="twitter_icon.png" width="128" height="128" style="width: 13%; margin-right: 2%;"></a></p>
+    <hr>
+    <p>Unable to display map: google is not defined</p>
+    <script type="text/javascript">
+    function googleMapInitcd2097a3a6f839debd() {
+        try {
+            var latlng = new google.maps.LatLng(66.5394718, 25.79700950000006);
+            var mapOptions = {
+                zoom: 14,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                streetViewControl: false,
+                scrollwheel: true,
+                draggable: true,
+                mapTypeControl: false
+            };
+            var map = new google.maps.Map(document.getElementById('googleMapCanvascd2097a3a6f839debd'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: latlng,
+                map: map
+            });
+        } catch (e) {
+            $("#googleMapCanvascd2097a3a6f839debd").replaceWith("<p>Unable to display map: " + e.message + "</p>")
+        }
+    }
+    $(function() {
+        var t;
+        var startWhenVisible = function() {
+            if ($("#googleMapCanvascd2097a3a6f839debd").is(":visible")) {
+                window.clearInterval(t);
+                googleMapInitcd2097a3a6f839debd();
+                return true;
+            }
+            return false;
+        };
+        if (!startWhenVisible()) {
+            t = window.setInterval(function() { startWhenVisible(); }, 100);
+        }
+    });
+    </script>
+</div>

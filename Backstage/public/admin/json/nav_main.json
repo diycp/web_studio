@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "text": "用户管理",
+      "icon": "&#xe620;",
+      "subset": [
+        {
+          "text": "按钮",
+          "icon": "&#xe621;",
+          "href": "demo/btn.html"
+        },{
+          "text": "表单",
+          "icon": "&#xe621;",
+          "href": "demo/form.html"
+        },{
+          "text": "表格",
+          "icon": "&#xe621;",
+          "href": "demo/table.html"
+        },{
+          "text": "选项卡",
+          "icon": "&#xe621;",
+          "href": "demo/tab-card.html"
+        },{
+          "text": "进度条",
+          "icon": "&#xe621;",
+          "href": "demo/progress-bar.html"
+        },{
+          "text": "折叠面板",
+          "icon": "&#xe621;",
+          "href": "demo/folding-panel.html"
+        },{
+          "text": "辅助元素",
+          "icon": "&#xe621;",
+          "href": "demo/auxiliar.html"
+        },{
+          "text": "更多示例",
+          "icon": "&#xe621;",
+          "target": true,
+          "href": "http://www.layui.com/demo/"
+        }
+      ]
+    },{
+      "text": "栏目管理",
+      "icon": "&#xe620;",
+      "href": "actual/category-list.html"
+    },{
+      "text": "文章管理",
+      "icon": "&#xe620;",
+      "href": "actual/content-list.html"
+    },{
+      "text": "成员信息管理",
+      "icon": "&#xe620;",
+      "href": "actual/member-list.html"
+    },{
+      "text": "系统设置",
+      "icon": "&#xe638;",
+      "href": "demo/tab-card.html"
+    }
+  ]
+}

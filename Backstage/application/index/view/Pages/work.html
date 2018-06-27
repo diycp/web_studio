@@ -1,0 +1,65 @@
+{extend name="Base/common"}
+
+{block name='primary'}
+    <section id="primary-content" class="upper-strip">
+        <div class="row content-row">
+            <div class="columns small-12 medium-12 large-12">
+                <p style="text-align: justify;">We invite you to experience true moments with us at SantaPark Arctic World. Our mission is to make every moment of your stay a lifelong memory, whether you are looking for a Christmas fairytale, nature escape, cultural feast or a company retreat. Stay in the luxurious comfort of Arctic TreeHouse Hotel and enjoy a variety of authentic yet magical encounters from your doorstep.</p>
+            </div>
+        </div>
+    </section>
+{/block}
+
+{block name="body"}
+    <section id="secondary-content" class="lower-strip">
+        <div class="row content-row">
+            <div class="columns small-12 medium-12 large-12">
+                <h3>BUILD YOUR OWN CHRISTMAS FAIRYTALE!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Filters -->
+            <!-- Number of Tours -->
+            <ul class="page-list-wrapper featured">
+                <!-- List Loop -->
+                <li class="columns small-12 medium-12 large-12 offer-false">
+                    <a href="/tour/santapark-entrance-ticket_66">
+                        <div class="image-wrapper backstretch-block columns small-12 medium-6 large-9" style="position: relative; z-index: 0; background-image: none;">
+                            <div class="backstretch-image" data-image="https://792327e631d328999a2c-23ff390096145d62077159b787d9fbd9.ssl.cf1.rackcdn.com/66/1/large.jpg"></div>
+                            <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 425px; width: 878px; z-index: -999998; position: absolute;">
+                                <div class="backstretch-item" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 100%; height: 100%; z-index: -999999;"><img alt="" src="https://792327e631d328999a2c-23ff390096145d62077159b787d9fbd9.ssl.cf1.rackcdn.com/66/1/large.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 878px; height: 585.333px; max-width: none; top: -80.1667px; right: auto; bottom: auto; left: 0px;"></div>
+                            </div>
+                        </div>
+                        <div class="content-wrapper columns small-12 medium-6 large-3">
+                            <p class="tagline">Featured</p>
+                            <h3>SantaPark Entrance Ticket</h3>
+                            <p>SantaPark Ticket 2018-2019</p>
+                            <span class="link">View Details</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <!-- warning message, no results -->
+            <!-- Filters -->
+            <!-- Number of Tours -->
+
+            {include file="Public/lists"}
+
+            <!-- warning message, no results -->
+            <div class="tour-pagination-content">
+                <div class="small-12 medium-12 large-12 columns">
+                    <div class="displayOptions">
+                        <!-- Pagination -->
+                        <ul class="pagination">
+                            <li class="arrow unavailable"></li>
+                            <li class="current"><a href="">1</a></li>
+                            <li><a href="?page=2&amp;per_page=8">2</a></li>
+                            <li class="arrow next"><a href="?page=2&amp;per_page=8"></a></li>
+                        </ul>
+                        <p>Page 1 of 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{/block}
